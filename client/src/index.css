@@ -1,0 +1,329 @@
+/* index.css - Append these styles to your existing CSS */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.form-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field.full-width {
+  width: 100%;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+input, select, textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+select {
+  background-color: white;
+  height: 40px;
+}
+
+.item-container {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.remove-item-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-item-btn {
+  background-color: #f0f0f0;
+  color: #555;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button-export, .button-import {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.file-input-container {
+  margin-top: 5px;
+}
+
+.file-select-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background-color: #7e3ff2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #6a2fd9;
+}
+
+.submit-btn:disabled {
+  background-color: #b88ff8;
+  cursor: not-allowed;
+}
+
+/* AI Prompt Section */
+.ai-prompt-section {
+  background-color: #f7f2ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ai-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.ai-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #d4c4ee;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.ai-button {
+  background-color: #7e3ff2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.ai-button:hover {
+  background-color: #6a2fd9;
+}
+
+.ai-button:disabled {
+  background-color: #b88ff8;
+  cursor: not-allowed;
+}
+
+.vendor-recommendations-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.vendor-recommendations-dialog {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vendor-recommendations-dialog h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.vendor-list {
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.vendor-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.vendor-item:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.vendor-item.selected {
+  border: 2px solid #3498db;
+  background-color: #ebf5fb;
+}
+
+.vendor-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.vendor-details p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #5a6268;
+}
+
+.vendor-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.vendor-actions button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.vendor-actions button:hover {
+  background-color: #2980b9;
+}
+
+.vendor-hint {
+  margin-top: 8px;
+}
+
+.show-vendors-btn {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.show-vendors-btn:hover {
+  color: #2980b9;
+}
