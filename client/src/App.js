@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
 import axios from 'axios';
-
+import ChatBot from './components/ChatBot';
 // Configure axios baseURL for different environments
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
   ? '' // In production, we'll use relative paths since frontend and backend are served from same domain
@@ -599,6 +599,7 @@ function App() {
           </button>
         </form>
       </div>
+      <ChatBot />
     </div>
   );
 }
