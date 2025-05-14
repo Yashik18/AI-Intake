@@ -6,7 +6,7 @@ print(response.text)
 import google.generativeai as genai
 import os
 
-genai.configure(api_key='AIzaSyDq20fehivP-3CTI-dvSToNgflPepEG0JY')
+genai.configure(api_key='')
 model = genai.GenerativeModel("gemini-pro")
 response = model.generate_content("Tell me about ProcUrPal's services")
 print(response.text)
